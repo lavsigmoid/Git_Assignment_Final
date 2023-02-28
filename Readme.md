@@ -39,7 +39,7 @@ git push -u origin Integration
 git push -u origin Hotfix
 git push -u origin Feature1
 git push -u origin Feature2
-```bash                       
+```                   
                        
 **Step 6**- Made some changes in to Feature1 branch and commited it and rebase it to integration branch.  
 
