@@ -1,15 +1,63 @@
-Welcome to my Repository.
+Git Assignment
 
-Tackle Writers' Block
-A random paragraph can also be an excellent way for a writer to tackle writers' block. Writing block can often happen due to being stuck with a current project that the writer is trying to complete. By inserting a completely random paragraph from which to begin, it can take down some of the issues that may have been causing the writers' block in the first place.
+**Step 1-** First created a directory named gitAssignment and created a readme.md file
 
-Beginning Writing Routine
-Another productive way to use this tool to begin a daily writing routine. One way is to generate a random paragraph with the intention to try to rewrite it while still keeping the original meaning. The purpose here is to just get the writing started so that when the writer goes onto their day's writing projects, words are already flowing from their fingers.
+```bash
+mkdir Git_Assignment
+mate Readme.md
+```
 
-Creative Writing
-Generating random paragraphs can be an excellent way for writers to get their creative flow going at the beginning of the day. The writer has no idea what topic the random paragraph will be about when it appears. This forces the writer to use creativity to complete one of three common writing challenges. The writer can use the paragraph as the first one of a short story and build upon it. A second option is to use the random paragraph somewhere in a short story they create. The third option is to have the random paragraph be the ending paragraph in a short story. No matter which of these challenges is undertaken, the writer is forced to use creativity to incorporate the paragraph into their writing.
+**Step 2-** Then initilised that file with git file.
+```bash
+git init
+```
+        
+        
+**Step 3-**  Then from main branch Created two branch named Integration and Hotfix. 
+```bash
+git checkout -b Integration
+git checkout -b Hotfix
+```
 
-Writing Challenge
-Another writing challenge can be to take the individual sentences in the random paragraph and incorporate a single sentence from that into a new paragraph to create a short story. Unlike the random sentence generator, the sentences from the random paragraph will have some connection to one another so it will be a bit different. You also won't know exactly how many sentences will appear in the random paragraph.
+        
+        
+**Step 4**- Then switched into Integration branch and Created two sub branch of integration branch named Feature1 and Feature2. 
+```bash
+git checkout Integration
+git checkout -b Feature1
+git checkout -b Feature2
+```
+      
+      
+**Step 5**- Commited some changes in Feature2 then pushed branches to remote and created a pull request in github and added 2 reviewer "my friend Purushotam and Sharthak" and merge this feature branch to integration Branch using github UI.  
+
+```bash
+git add Readme.md
+git commit -m "Readme updated"
+git push -u origin main
+git push -u origin Integration
+git push -u origin Hotfix
+git push -u origin Feature1
+git push -u origin Feature2
+```bash                       
+                       
+**Step 6**- Made some changes in to Feature1 branch and commited it and rebase it to integration branch.  
+
+```bash
+git rebase integration
+```
+        
+        
+**Step 7**- Created Pull Request, added 2 reviewers, as Sharthak and Purushotom, and both agreed and reviewed the PR then i Merged the PR.
+
+
+**Step 8**- Made some changes in Feature1 branch and then commit it , and then Created Pull Request, added 2 reviewers & merged it into Integration, Hotfix, and main branch.
+
+**Step 9-** Commited some changes in the Hotfix branch and Created Pull Request, added 2 reviewers, got the PR reviewed & merged it into the main as well as the Integration branch.
+
+**Done**
+
+
+<img width="1121" alt="Screenshot 2023-02-28 at 6 00 32 PM" src="https://user-images.githubusercontent.com/122512155/221854762-eeab7489-5b21-4991-b10a-b06040cae27d.png">
 
 
